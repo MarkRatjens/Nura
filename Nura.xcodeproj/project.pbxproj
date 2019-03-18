@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4D1897FA223F56120089A8F4 /* Nura.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1897F8223F56120089A8F4 /* Nura.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D189802223F56480089A8F4 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189800223F56480089A8F4 /* Locator.swift */; };
+		4D189803223F56480089A8F4 /* GeoCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D189801223F56480089A8F4 /* GeoCoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D1897F5223F56120089A8F4 /* Nura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1897F8223F56120089A8F4 /* Nura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nura.h; sourceTree = "<group>"; };
 		4D1897F9223F56120089A8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D189800223F56480089A8F4 /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locator.swift; path = Nura/Locator.swift; sourceTree = "<group>"; };
+		4D189801223F56480089A8F4 /* GeoCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeoCoder.swift; path = Nura/GeoCoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,8 @@
 		4D1897EB223F56120089A8F4 = {
 			isa = PBXGroup;
 			children = (
+				4D189801223F56480089A8F4 /* GeoCoder.swift */,
+				4D189800223F56480089A8F4 /* Locator.swift */,
 				4D1897F7223F56120089A8F4 /* Nura */,
 				4D1897F6223F56120089A8F4 /* Products */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					4D1897F4223F56120089A8F4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D189802223F56480089A8F4 /* Locator.swift in Sources */,
+				4D189803223F56480089A8F4 /* GeoCoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		4D1897FE223F56120089A8F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nyasa.Nura;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		4D1897FF223F56120089A8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
