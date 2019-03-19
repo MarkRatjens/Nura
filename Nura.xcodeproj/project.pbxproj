@@ -16,8 +16,8 @@
 		4D1897F5223F56120089A8F4 /* Nura.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nura.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1897F8223F56120089A8F4 /* Nura.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nura.h; sourceTree = "<group>"; };
 		4D1897F9223F56120089A8F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D189800223F56480089A8F4 /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locator.swift; path = Nura/Locator.swift; sourceTree = "<group>"; };
-		4D189801223F56480089A8F4 /* GeoCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeoCoder.swift; path = Nura/GeoCoder.swift; sourceTree = "<group>"; };
+		4D189800223F56480089A8F4 /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
+		4D189801223F56480089A8F4 /* GeoCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoCoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,8 +34,6 @@
 		4D1897EB223F56120089A8F4 = {
 			isa = PBXGroup;
 			children = (
-				4D189801223F56480089A8F4 /* GeoCoder.swift */,
-				4D189800223F56480089A8F4 /* Locator.swift */,
 				4D1897F7223F56120089A8F4 /* Nura */,
 				4D1897F6223F56120089A8F4 /* Products */,
 			);
@@ -52,6 +50,8 @@
 		4D1897F7223F56120089A8F4 /* Nura */ = {
 			isa = PBXGroup;
 			children = (
+				4D189801223F56480089A8F4 /* GeoCoder.swift */,
+				4D189800223F56480089A8F4 /* Locator.swift */,
 				4D1897F8223F56120089A8F4 /* Nura.h */,
 				4D1897F9223F56120089A8F4 /* Info.plist */,
 			);
